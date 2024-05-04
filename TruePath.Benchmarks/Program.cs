@@ -71,3 +71,4 @@ public class Program
         _ = BenchmarkRunner.Run<NormalizePathBenchmark>();
     }
 }
+// SPDX-License-Identifier: MIT

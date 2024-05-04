@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2024 Friedrich von Never <friedrich@fornever.me>
+// SPDX-FileCopyrightText: 2024 TruePath contributors <https://github.com/ForNeVeR/TruePath>
 //
 // SPDX-License-Identifier: MIT
 
@@ -10,12 +10,7 @@ public interface IPath
     /// <summary>The normalized path string.</summary>
     string Value { get; }
 
-    /// <summary>
-    /// The kind of the file system entry. This is determined by the file system, not by the path itself.
-    /// </summary>
-    FileEntryKind FileEntryKind { get; }
-
-    /// <summary> The full name of the last component of this path.</summary>
+    /// <summary>The name of the last component of this path.</summary>
     string FileName { get; }
 
     /// <summary>

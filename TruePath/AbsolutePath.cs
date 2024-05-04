@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2024 Friedrich von Never <friedrich@fornever.me>
+// SPDX-FileCopyrightText: 2024 TruePath contributors <https://github.com/ForNeVeR/TruePath>
 //
 // SPDX-License-Identifier: MIT
 
@@ -43,9 +43,6 @@ public readonly struct AbsolutePath : IEquatable<AbsolutePath>, IPath, IPath<Abs
 
     /// <inheritdoc cref="IPath.FileName"/>
     public string FileName => Underlying.FileName;
-
-    /// <inheritdoc cref="IPath.FileEntryKind"/>
-    public FileEntryKind FileEntryKind => this.GetKind();
 
     /// <remarks>
     /// Note that in case path <paramref name="b"/> is <b>absolute</b>, it will completely take over and the
